@@ -12,6 +12,7 @@ trait InitSpark {
 
   val sc = spark.sparkContext
   val sqlContext = spark.sqlContext
+  val a = 10
   def reader = spark.read
                .option("header",true)
                .option("inferSchema", true)
